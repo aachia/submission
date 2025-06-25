@@ -1,0 +1,117 @@
+{
+  "additionalData": {
+    "avsResult": "4 AVS not supported for this card type",
+    "cardSummary": "0002",
+    "scaExemptionRequested": "transactionRiskAnalysis",
+    "retry.attempt1.avsResultRaw": "4",
+    "networkTxReference": "167943641803970",
+    "refusalReasonRaw": "AUTHORISED",
+    "eci": "N/A",
+    "acquirerAccountCode": "TestPmmAcquirerAccount",
+    "expiryDate": "3/2030",
+    "xid": "N/A",
+    "cavvAlgorithm": "N/A",
+    "cardBin": "370000",
+    "threeDAuthenticated": "false",
+    "cvcResultRaw": "M",
+    "paymentMethodVariant": "amex",
+    "merchantReference": "Aaron_2306_amex",
+    "acquirerReference": "8875B985775",
+    "issuerBin": "",
+    "cardIssuingCountry": "NL",
+    "liabilityShift": "false",
+    "fraudResultType": "GREEN",
+    "authCode": "093056",
+    "cardHolderName": "Checkout Shopper PlaceHolder",
+    "isCardCommercial": "unknown",
+    "fraudManualReview": "false",
+    "PaymentAccountReference": "yfGeTxem1dyE95G7mBir2QY3rLoHz",
+    "retry.attempt1.acquirerAccount": "TestPmmAcquirerAccount",
+    "threeDOffered": "false",
+    "retry.attempt1.acquirer": "TestPmmAcquirer",
+    "threeDOfferedResponse": "N/A",
+    "authorisationMid": "50",
+    "authorisedAmountValue": "10000",
+    "issuerCountry": "NL",
+    "cvcResult": "1 Matches",
+    "cavv": "N/A",
+    "retry.attempt1.responseCode": "Approved",
+    "authorisedAmountCurrency": "SGD",
+    "threeDAuthenticatedResponse": "N/A",
+    "avsResultRaw": "4",
+    "retry.attempt1.rawResponse": "AUTHORISED",
+    "paymentMethod": "amex",
+    "retry.attempt1.shopperInteraction": "Ecommerce",
+    "cardPaymentMethod": "amex",
+    "fundingSource": "CREDIT",
+    "acquirerCode": "TestPmmAcquirer",
+    "retry.attempt1.scaExemptionRequested": "transactionRiskAnalysis"
+  },
+  "fraudResult": {
+    "accountScore": 50,
+    "results": [
+      {
+        "accountScore": 50,
+        "checkId": 41,
+        "name": "PaymentDetailNonFraudRefCheck"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 1,
+        "name": "PaymentDetailRefCheck"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 13,
+        "name": "IssuerRefCheck"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 2,
+        "name": "CardChunkUsage"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 3,
+        "name": "PaymentDetailUsage"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 4,
+        "name": "HolderNameUsage"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 7,
+        "name": "ShopperIpUsage"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 8,
+        "name": "ShopperEmailUsage"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 15,
+        "name": "IssuingCountryReferral"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 25,
+        "name": "CVCAuthResultCheck"
+      }
+    ]
+  },
+  "pspReference": "WHNMD8HQV67FHJ75",
+  "resultCode": "Authorised",
+  "amount": {
+    "currency": "SGD",
+    "value": 10000
+  },
+  "merchantAccount": "AdyenRecruitment_EcomSG_TEST",
+  "merchantReference": "Aaron_2306_amex",
+  "paymentMethod": {
+    "brand": "amex",
+    "type": "scheme"
+  }
+}

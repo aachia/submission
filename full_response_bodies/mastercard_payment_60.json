@@ -1,0 +1,117 @@
+{
+  "additionalData": {
+    "avsResult": "4 AVS not supported for this card type",
+    "cardSummary": "0004",
+    "scaExemptionRequested": "transactionRiskAnalysis",
+    "retry.attempt1.avsResultRaw": "4",
+    "networkTxReference": "G1GWYKD5P0623",
+    "refusalReasonRaw": "AUTHORISED",
+    "eci": "N/A",
+    "acquirerAccountCode": "TestPmmAcquirerAccount",
+    "expiryDate": "3/2030",
+    "xid": "N/A",
+    "cavvAlgorithm": "N/A",
+    "cardBin": "557700",
+    "threeDAuthenticated": "false",
+    "cvcResultRaw": "M",
+    "paymentMethodVariant": "mc",
+    "merchantReference": "Aaron_2306_mastercard",
+    "acquirerReference": "FCGNM65KKCC",
+    "issuerBin": "55770000",
+    "cardIssuingCountry": "PL",
+    "liabilityShift": "false",
+    "fraudResultType": "GREEN",
+    "authCode": "084440",
+    "cardHolderName": "Checkout Shopper PlaceHolder",
+    "isCardCommercial": "unknown",
+    "fraudManualReview": "false",
+    "PaymentAccountReference": "JsP0WTja0UPUgnloF2Bafg1n4Yk8V",
+    "retry.attempt1.acquirerAccount": "TestPmmAcquirerAccount",
+    "threeDOffered": "false",
+    "retry.attempt1.acquirer": "TestPmmAcquirer",
+    "threeDOfferedResponse": "N/A",
+    "authorisationMid": "50",
+    "authorisedAmountValue": "6000",
+    "issuerCountry": "PL",
+    "cvcResult": "1 Matches",
+    "cavv": "N/A",
+    "retry.attempt1.responseCode": "Approved",
+    "authorisedAmountCurrency": "SGD",
+    "threeDAuthenticatedResponse": "N/A",
+    "avsResultRaw": "4",
+    "retry.attempt1.rawResponse": "AUTHORISED",
+    "paymentMethod": "mc",
+    "retry.attempt1.shopperInteraction": "Ecommerce",
+    "cardPaymentMethod": "mc",
+    "fundingSource": "CREDIT",
+    "acquirerCode": "TestPmmAcquirer",
+    "retry.attempt1.scaExemptionRequested": "transactionRiskAnalysis"
+  },
+  "fraudResult": {
+    "accountScore": 50,
+    "results": [
+      {
+        "accountScore": 0,
+        "checkId": 2,
+        "name": "CardChunkUsage"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 3,
+        "name": "PaymentDetailUsage"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 4,
+        "name": "HolderNameUsage"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 7,
+        "name": "ShopperIpUsage"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 8,
+        "name": "ShopperEmailUsage"
+      },
+      {
+        "accountScore": 50,
+        "checkId": 41,
+        "name": "PaymentDetailNonFraudRefCheck"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 13,
+        "name": "IssuerRefCheck"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 1,
+        "name": "PaymentDetailRefCheck"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 15,
+        "name": "IssuingCountryReferral"
+      },
+      {
+        "accountScore": 0,
+        "checkId": 25,
+        "name": "CVCAuthResultCheck"
+      }
+    ]
+  },
+  "pspReference": "R2FNRN7Z2SP7ZG75",
+  "resultCode": "Authorised",
+  "amount": {
+    "currency": "SGD",
+    "value": 6000
+  },
+  "merchantAccount": "AdyenRecruitmentCOM",
+  "merchantReference": "Aaron_2306_mastercard",
+  "paymentMethod": {
+    "brand": "mc",
+    "type": "scheme"
+  }
+}

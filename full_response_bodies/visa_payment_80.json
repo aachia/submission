@@ -1,0 +1,119 @@
+{
+    "additionalData": {
+        "scaExemptionRequested": "transactionRiskAnalysis",
+        "refusalReasonRaw": "AUTHORISED",
+        "eci": "N/A",
+        "acquirerAccountCode": "TestPmmAcquirerAccount",
+        "xid": "N/A",
+        "threeDAuthenticated": "false",
+        "paymentMethodVariant": "visa",
+        "issuerBin": "41111111",
+        "payoutEligible": "Y",
+        "fraudManualReview": "false",
+        "threeDOffered": "false",
+        "threeDOfferedResponse": "N/A",
+        "authorisationMid": "50",
+        "cavv": "N/A",
+        "fundsAvailability": "I",
+        "authorisedAmountCurrency": "SGD",
+        "threeDAuthenticatedResponse": "N/A",
+        "avsResultRaw": "5",
+        "retry.attempt1.rawResponse": "AUTHORISED",
+        "paymentMethod": "visa",
+        "retry.attempt1.scaExemptionRequested": "transactionRiskAnalysis",
+        "avsResult": "5 No AVS data provided",
+        "cardSummary": "1111",
+        "retry.attempt1.avsResultRaw": "5",
+        "networkTxReference": "580114610755398",
+        "expiryDate": "3/2030",
+        "cavvAlgorithm": "N/A",
+        "cardBin": "411111",
+        "cvcResultRaw": "M",
+        "merchantReference": "Aaron_2306_visa",
+        "acquirerReference": "25KKXBK52NK",
+        "cardIssuingCountry": "NL",
+        "liabilityShift": "false",
+        "fraudResultType": "GREEN",
+        "authCode": "042210",
+        "cardHolderName": "Checkout Shopper PlaceHolder",
+        "isCardCommercial": "unknown",
+        "PaymentAccountReference": "GnjvU63QBqhODsY5KwFgitkChY96h",
+        "retry.attempt1.acquirerAccount": "TestPmmAcquirerAccount",
+        "cardIssuingBank": "ADYEN TEST BANK",
+        "retry.attempt1.acquirer": "TestPmmAcquirer",
+        "authorisedAmountValue": "8000",
+        "issuerCountry": "NL",
+        "cvcResult": "1 Matches",
+        "retry.attempt1.responseCode": "Approved",
+        "retry.attempt1.shopperInteraction": "Ecommerce",
+        "cardPaymentMethod": "visa",
+        "acquirerCode": "TestPmmAcquirer"
+    },
+    "fraudResult": {
+        "accountScore": 0,
+        "results": [
+            {
+                "accountScore": 0,
+                "checkId": 2,
+                "name": "CardChunkUsage"
+            },
+            {
+                "accountScore": 0,
+                "checkId": 3,
+                "name": "PaymentDetailUsage"
+            },
+            {
+                "accountScore": 0,
+                "checkId": 4,
+                "name": "HolderNameUsage"
+            },
+            {
+                "accountScore": 0,
+                "checkId": 7,
+                "name": "ShopperIpUsage"
+            },
+            {
+                "accountScore": 0,
+                "checkId": 8,
+                "name": "ShopperEmailUsage"
+            },
+            {
+                "accountScore": 0,
+                "checkId": 1,
+                "name": "PaymentDetailRefCheck"
+            },
+            {
+                "accountScore": 0,
+                "checkId": 41,
+                "name": "PaymentDetailNonFraudRefCheck"
+            },
+            {
+                "accountScore": 0,
+                "checkId": 13,
+                "name": "IssuerRefCheck"
+            },
+            {
+                "accountScore": 0,
+                "checkId": 15,
+                "name": "IssuingCountryReferral"
+            },
+            {
+                "accountScore": 0,
+                "checkId": 25,
+                "name": "CVCAuthResultCheck"
+            }
+        ]
+    },
+    "pspReference": "JQG6TBPBQZ9TPM75",
+    "resultCode": "Authorised",
+    "amount": {
+        "currency": "SGD",
+        "value": 8000
+    },
+    "merchantAccount": "AdyenRecruitmentCOM",
+    "merchantReference": "Aaron_2306_visa",
+    "paymentMethod": {
+        "brand": "visa",
+        "type": "scheme"
+    }
+}
