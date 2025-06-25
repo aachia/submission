@@ -227,7 +227,7 @@ paymentPspReference used here will belong to the Visa $80 payment earlier which 
 ### D. REFUND webhook notifications
 **Assumptions:** From observation, I think that the payments made have delayed automatic capture. Reasoning behind that being that Amex payment could be succesfully refunded even though no manual capture request was done on it. 
 
-Without a capture delay, the Visa cancellation request would have been likely failed because the payment request would have been immediately captured after authorization and then the payment should be able to be refunded after when requested, instead of failing.
+Without a capture delay, the Visa cancellation request would likely failed because the payment request would be immediately captured after authorization and then the payment would be able to be refunded when requested, instead of failing like in the notification shown below.
 
 | Transaction        | Notification                                              | Reason |
 |--------------------|------------------------------------------------------------|--------|
@@ -524,7 +524,7 @@ I set the following properties for the card payment method:
 
 `billingAddressRequired: true` — Adds a billing address form and makes it required.
 
-```
+```json
 // code in adyen_assessment/adyen-python-online-payments/app/static/js/dropin.js
 
     const paymentMethodsConfiguration = {
@@ -562,7 +562,7 @@ To add in the PayNow method in the drop-in, I simply made sure to set the `reque
 
 The last step is to simply add `paynow: {countDownTime: 1}` into `paymentMethodsConfiguration` and the PayNow integration with 1 minute timer is now completed.
 
-```
+```json
 //code in adyen_assessment/adyen-python-online-payments/app/main/sessions.py
 
     def adyen_sessions(host_url):
@@ -574,7 +574,7 @@ The last step is to simply add `paynow: {countDownTime: 1}` into `paymentMethods
         request['countryCode'] = "SG"
         ...
 ```
-```
+```json
     //code in adyen_assessment/adyen-python-online-payments/app/static/js/dropin.js
 
     const paymentMethodsConfiguration = {
