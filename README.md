@@ -524,7 +524,7 @@ I set the following properties for the card payment method:
 
 `billingAddressRequired: true` — Adds a billing address form and makes it required.
 
-```json
+```js
 // code in adyen_assessment/adyen-python-online-payments/app/static/js/dropin.js
 
     const paymentMethodsConfiguration = {
@@ -562,7 +562,7 @@ To add in the PayNow method in the drop-in, I simply made sure to set the `reque
 
 The last step is to simply add `paynow: {countDownTime: 1}` into `paymentMethodsConfiguration` and the PayNow integration with 1 minute timer is now completed.
 
-```json
+```js
 //code in adyen_assessment/adyen-python-online-payments/app/main/sessions.py
 
     def adyen_sessions(host_url):
@@ -574,7 +574,7 @@ The last step is to simply add `paynow: {countDownTime: 1}` into `paymentMethods
         request['countryCode'] = "SG"
         ...
 ```
-```json
+```js
     //code in adyen_assessment/adyen-python-online-payments/app/static/js/dropin.js
 
     const paymentMethodsConfiguration = {
