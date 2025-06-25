@@ -225,14 +225,14 @@ paymentPspReference used here will belong to the Visa $80 payment earlier which 
 ```
 ---
 ### D. REFUND webhook notifications
-**Assumptions:** From observation, I think that the payments made has delayed automatic capture. Reasoning behind that being that Amex payment could be succesfully refunded even though no capture request was done on it. 
+**Assumptions:** From observation, I think that the payments made have delayed automatic capture. Reasoning behind that being that Amex payment could be succesfully refunded even though no manual capture request was done on it. 
 
-Without a delay, the Visa cancellation request would have been likely failed because the payment request would have been immediately captured after authorization and then the payment should be able to be refunded after when requested.
+Without a capture delay, the Visa cancellation request would have been likely failed because the payment request would have been immediately captured after authorization and then the payment should be able to be refunded after when requested, instead of failing.
 
 | Transaction        | Notification                                              | Reason |
 |--------------------|------------------------------------------------------------|--------|
 | Mastercard Payment | `"reason" : "", "success" : "true"`                        | The Mastercard payment request previously made was succesful and it was authorized and then captured after some delay so the refund request worked.      |
-| Visa Payment       | `"reason" : "Transaction hasn't been captured, refund not possible", "success" : "false"` | The Visa payment request previously made was sucessful so it was authorized but not captured yet. Before it can be captured, there was a cancellation request made on that request. Refund on that request will not be possible since it was never captured in the first place because refunds only work on captured payments     |
+| Visa Payment       | `"reason" : "Transaction hasn't been captured, refund not possible", "success" : "false"` | The Visa payment request previously made was sucessful so it was authorized but not captured yet. Before it can be captured, there was a cancellation request made on that request. Refund on that request will not be possible since it was never captured in the first place.    |
 | Amex Payment       | `"reason" : "", "success" : "true"`                        | The Amex payment request previously made was succesful and it was authorized and then captured after some delay so the refund request worked.    |
 ---
 ### E. Tokenisation with AdyenRecruitment_EcomSG_TEST
